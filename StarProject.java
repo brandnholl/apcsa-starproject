@@ -14,6 +14,8 @@ public class StarProject {
         star.hollowFullPyramid();
         star.hollowInvertedFullPyramid();
         star.hollowDiamondPyramid();
+        star.hollowHourglassPattern();
         star.floydsTriangle();
+        star.pascalsTriangle();
     }
 }
