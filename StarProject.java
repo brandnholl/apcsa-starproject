@@ -4,5 +4,8 @@ public class StarProject {
         star.rightHalfPyramid();
         star.leftHalfPyramid();
         star.fullPyramid();
+        star.invertedRightHalfPyramid();
+        star.invertedLeftHalfPyramid();
+        star.invertedFullPyramid();
     }
 }
