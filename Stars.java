@@ -109,7 +109,24 @@ public class Stars {
     }
 
     public void hourglassPattern() {
-
+        for (int i = 5; i >= 1; i--) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = 2; i <= 5; i++) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
         System.out.println();
     }
 
@@ -191,6 +208,34 @@ public class Stars {
     }
 
     public void hollowHourglassPattern() {
+        System.out.println("* * * * *");
+        for (int i = 4; i >= 1; i--) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("*");
+            for (int k = 1; k <= 2 * i - 3; k++) {
+                System.out.print(" ");
+            }
+            if (i > 1) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 2; i <= 4; i++) {
+            for (int j = 1; j <= 5 - i; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("*");
+            for (int k = 1; k <= 2 * i - 3; k++) {
+                System.out.print(" ");
+            }
+            if (i > 1) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("* * * * *");
         System.out.println();
     }
 
@@ -212,13 +257,14 @@ public class Stars {
         }
         return i * factorial(i - 1);
     }
+
     public void pascalsTriangle() {
         for (int i = 0; i < (3 + 1); i++) {
             for (int u = 0; u < (3 - (i)); u++) {
                 System.out.print(" ");
             }
             for (int k = 0; k < i; k++) {
-                System.out.print(" " + factorial(i) / (factorial(i-k) * factorial(k)));
+                System.out.print(" " + factorial(i) / (factorial(i - k) * factorial(k)));
             }
             System.out.print(" 1");
             System.out.println();
